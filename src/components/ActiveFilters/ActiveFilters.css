@@ -1,0 +1,24 @@
+.active-filters{
+    margin-left:10px;
+}
+.active-filter-name{
+    border : 1px solid var(--lightest-color);;
+    border-radius: 15px;
+    padding : 0px 5px 2px 7px;
+    margin: 0 5px 5px 0px;
+    font-size: 14px;
+    justify-content : space-evenly;
+    align-items : center;
+}
+.remove-filter{
+    color: var(--lightest-color);
+}
+.remove-filter:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .active-filters{
+        display : none ;
+    }
+}
