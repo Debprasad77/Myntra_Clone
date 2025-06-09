@@ -17,7 +17,7 @@ export default function Discount({activeFilter}) {
                                 type="radio" 
                                 name="discount" 
                                 value={discount}
-                                checked={activeFilter == discount}
+                                checked={activeFilter === discount}
                                 onClick={ (event) => dispatch( addDiscountFilter( event.target.value)) }
                             ></input>
                             <span className="filter-name">

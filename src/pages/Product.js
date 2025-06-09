@@ -5,9 +5,9 @@ import {Breadcrumb} from '../components/index.js';
 import { useParams } from "react-router-dom";
 import {products} from '../utils/Products';
 export default function Product() {
-    // console.log(products);
+    console.log(products);
     let {productID} = useParams();
-    const product = products.filter(item => item.id == productID)[0];
+    const product = products.filter(item => item.id === productID)[0];
     return (
         <div>
             <Breadcrumb addItem={product} />

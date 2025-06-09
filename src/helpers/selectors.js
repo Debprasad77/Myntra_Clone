@@ -4,14 +4,12 @@ export const checkIfNoFilter = ( filters ) => {
     return noFilter;
 };
 export const checkPriceInFilter = ( price , filters ) => {
-    let isFound=false;
-    filters?.map( (range) => {
-        if(JSON.stringify(range) === JSON.stringify(price)){
-            isFound=true;
-        }
-    })
-    return isFound;
-}
+    // Use .some() to check if any range in filters matches the price
+    // .some() returns true as soon as the condition is met, or false otherwise.
+    return filters?.some( (range) => {
+        return JSON.stringify(range) === JSON.stringify(price);
+    });
+};
 export const genderFilter = ( products , genderFilter ) => {
     if(genderFilter === null) return products;
     return products.filter(product => {

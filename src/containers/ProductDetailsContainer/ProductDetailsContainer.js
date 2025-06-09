@@ -1,8 +1,8 @@
-import {React,useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductDetailsContainer.css';
 import { useSelector , useDispatch } from 'react-redux';
 import { addItemToWishlist , removeItemFromWishlist } from '../../actions/wishlist';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { nFormatter , isInWishList , isInBag } from '../../helpers/general';
 import { addItemToBag , setSize} from '../../actions/bag';
 import { openModal } from '../../actions/modals';
@@ -18,15 +18,20 @@ export default function ProductDetailsContainer({product}) {
     let isAddedToWishlist = isInWishList( wishlist , product );
     let isAddedToBag = isInBag( bag , product );
     const [selectedSize,setSelectedSize] = useState(null);
-    if( isAddedToBag ){
-        bag.map(item => {
-            if( item.id === product.id ){
-                if( selectedSize != item.size ){
-                    setSelectedSize(item.size);
-                }
-            }
-        })
+    useEffect(() => {
+    // This effect runs whenever isAddedToBag, bag, product.id, or selectedSize changes.
+    // It's used to synchronize the `selectedSize` state if the product is already in the bag.
+    if (isAddedToBag) {
+        // Use `find` because we're looking for a single matching item, not transforming the array.
+        const itemInBag = bag.find(item => item.id === product.id);
+        // If the item is found in the bag and its size is different from the currently selected size,
+        // update the selected size in the component's state.
+        if (itemInBag && selectedSize !== itemInBag.size) {
+            setSelectedSize(itemInBag.size);
+        }
     }
+}, [isAddedToBag, bag, product.id, selectedSize]); // Dependency array for the effect
+// --- End of replacement ---
     return (
         <div className="product-details-container" >
             <h2 className="product-brandname" >{product.brandName}</h2>

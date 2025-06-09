@@ -2,14 +2,14 @@ import React from 'react'
 import './WishListItemCard.css'
 import {Link} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
-import {addItemToWishlist,removeItemFromWishlist} from '../../actions/wishlist';
+import {removeItemFromWishlist} from '../../actions/wishlist';
 import {addItemToBag} from '../../actions/bag';
 export default function WishListItemCard({ item }) {
     const dispatch = useDispatch();
-    function moveItemToBagHandler(event){
-        console.log(item);
-        console.log("move it to bag");
-    }
+    // function moveItemToBagHandler(event){
+    //     console.log(item);
+    //     console.log("move it to bag");
+    // }
     return (
         <div className="wishlist-item-card">
             <Link to={`/${item.id}`}>

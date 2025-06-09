@@ -7,7 +7,7 @@ export default function WishListContainer() {
     return (
         <div className="wishlist-container flex-row " >
             {
-                products.length == 0 ?
+                products.length === 0 ?
                 <Empty />
                 :
                 products.map((product,index) =>{
