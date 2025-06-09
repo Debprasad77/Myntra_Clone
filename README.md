@@ -105,8 +105,11 @@ Myntra-Clone/
 
 **Debprasad Manna**
 🧑‍💻 Web Developer
+
 💼 Passionate about UI/UX & full-stack development
+
 🌐 [Portfolio Website](https://debprasadportfolio.vercel.app)
+
 📫 Reach me at: [debprasad7047@gmail.com](mailto:debprasad7047@gmail.com)
 
 ---
