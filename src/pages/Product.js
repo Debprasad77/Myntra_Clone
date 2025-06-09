@@ -7,7 +7,7 @@ import {products} from '../utils/Products';
 export default function Product() {
     console.log(products);
     let {productID} = useParams();
-    const product = products.filter(item => item.id === productID)[0];
+    const product = products.find(item => item.id.toString() === productID);
     return (
         <div>
             <Breadcrumb addItem={product} />

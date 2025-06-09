@@ -1,6 +1,4 @@
-import {
-    FETCH_PRODUCTS,
-} from '../actions/products';
+import {FETCH_PRODUCTS} from '../actions/products';
 
 const defaultProductState = [];
 
