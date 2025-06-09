@@ -9,9 +9,18 @@
 
 ---
 
+<p align="center">
+  <a href="https://myntra-clone-tejas.netlify.app/">
+    <img src="public/github_readme_media/preview.gif" alt="demo gif">
+  </a>
+</p>
+
+---
+
 ## 🚀 Live Demo
 
 🔗 [**Click Here to Explore the Myntra Clone**](https://your-deployment-url.com)
+
 📱 Optimized for all screen sizes — mobile, tablet, and desktop
 
 ---
@@ -35,18 +44,15 @@
 **Frontend**
 ✔ React.js
 ✔ Redux Toolkit
-✔ Tailwind CSS or Material UI
 ✔ React Router DOM
 ✔ Axios
 
-**Backend** (if included)
+**Backend** 
 ✔ Node.js
 ✔ Express.js
-✔ MongoDB / Firebase
+✔ MongoDB
 
 **Other Tools**
-✔ Cloudinary (Image hosting)
-✔ JWT / Firebase Auth
 ✔ Vercel / Netlify (Deployment)
 
 ---
@@ -104,6 +110,7 @@ Myntra-Clone/
 ## 🙋‍♂️ About Me
 
 **Debprasad Manna**
+
 🧑‍💻 Web Developer
 
 💼 Passionate about UI/UX & full-stack development
