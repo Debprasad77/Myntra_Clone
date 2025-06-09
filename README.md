@@ -42,17 +42,20 @@
 ## 🧰 Tech Stack
 
 **Frontend**
+
 ✔ React.js
 ✔ Redux Toolkit
 ✔ React Router DOM
 ✔ Axios
 
 **Backend** 
+
 ✔ Node.js
 ✔ Express.js
 ✔ MongoDB
 
 **Other Tools**
+
 ✔ Vercel / Netlify (Deployment)
 
 ---
