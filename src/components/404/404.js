@@ -1,5 +1,5 @@
 import React from 'react'
-import Lottie from 'lottie-react-web'
+import Lottie from 'lottie-react'
 import animation from '../../assets/lottie-json/404.json'
 import './404.css'
 export default function Page404() {
