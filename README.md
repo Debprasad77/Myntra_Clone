@@ -10,7 +10,7 @@
 ---
 
 <p align="center">
-  <a href="https://myntra-clone-tejas.netlify.app/">
+  <a href="https://myntra-clonev1.vercel.app/">
     <img src="public/github_readme_media/preview.gif" alt="demo gif">
   </a>
 </p>
@@ -19,7 +19,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [**Click Here to Explore the Myntra Clone**](https://your-deployment-url.com)
+🔗 [**Click Here to Explore the Myntra Clone**](https://myntra-clonev1.vercel.app/)
 
 📱 Optimized for all screen sizes — mobile, tablet, and desktop
 
